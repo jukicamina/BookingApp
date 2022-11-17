@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="containerMainItemsHOME" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="1087.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminController">
+   <children>
+      <ImageView fitHeight="800.0" fitWidth="1087.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@slike/9WYxT.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="containerMainItems1" layoutX="10.0" layoutY="10.0" prefHeight="611.0" prefWidth="1087.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TableView layoutX="70.0" layoutY="130.0" prefHeight="431.0" prefWidth="750.0" stylesheets="@table.css">
+               <columns>
+                  <TableColumn maxWidth="264.0" prefWidth="264.0" text="Accomodation name" />
+                  <TableColumn maxWidth="229.0" prefWidth="125.0" text="Location" />
+                  <TableColumn maxWidth="223.0" prefWidth="117.0" text="Price" />
+                  <TableColumn maxWidth="289.0" prefWidth="243.0" text="Date of reservation" />
+               </columns>
+            </TableView>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="875.0" layoutY="360.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" styleClass="bLSU" stylesheets="@buttons.css" text="Cancel" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" layoutX="875.0" layoutY="300.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" styleClass="bLSU" stylesheets="@buttons.css" text="Done" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" layoutX="875.0" layoutY="420.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="150.0" styleClass="bLSU" stylesheets="@buttons.css" text="Check funds" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Label fx:id="PickARow11" layoutX="365.0" layoutY="545.0" prefHeight="40.0" prefWidth="200.0" text="Pick a row first!" textFill="WHITE" visible="false">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="empty11" layoutX="365.0" layoutY="545.0" prefHeight="40.0" prefWidth="200.0" text="Table is empty!" textFill="WHITE" visible="false">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Text fill="#f8f6f6" layoutX="89.0" layoutY="81.0" nodeOrientation="LEFT_TO_RIGHT" strokeType="OUTSIDE" strokeWidth="0.0" text="           My reservations" wrappingWidth="572.390625">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="140.0" fitWidth="220.0" layoutX="837.0" layoutY="132.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../slike/reservations.png" />
+               </image>
+            </ImageView>
+            <TextField alignment="CENTER" layoutX="875.0" layoutY="480.0" prefHeight="40.0" prefWidth="150.0" promptText="Add funds" styleClass="bLSU" stylesheets="@buttons.css">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+         </children>
+         <stylesheets>
+            <URL value="@table.css" />
+            <URL value="@table.css" />
+         </stylesheets>
+      </AnchorPane>
+   </children>
+</AnchorPane>

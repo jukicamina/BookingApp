@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="containerMainItemsHOME" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="919.0" prefWidth="1287.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Pane fx:id="Label" layoutX="200.0" prefHeight="200.0" prefWidth="1087.0" stylesheets="@pane.css">
+         <children>
+            <Label layoutX="304.0" layoutY="70.0" prefHeight="90.0" prefWidth="513.0" text="OOKING SYSTEM" textAlignment="RIGHT" textFill="#499fdd">
+               <font>
+                  <Font size="50.0" />
+               </font>
+               <graphic>
+                  <Label fx:id="letterB" prefHeight="90.0" prefWidth="0.0" stylesheets="@pane.css" text="B">
+                     <font>
+                        <Font size="74.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </Label>
+         </children>
+      </Pane>
+      <AnchorPane prefHeight="891.0" prefWidth="198.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="930.0" fitWidth="200.0" layoutY="-6.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1077.0" AnchorPane.topAnchor="-6.0">
+               <image>
+                  <Image url="@slike/backgroundMirrored.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="bHOME" layoutX="14.0" layoutY="121.0" mnemonicParsing="false" onAction="#HOME1ButtonClick" onMouseClicked="#HOME1ButtonClick" prefHeight="148.0" prefWidth="136.0" stylesheets="@buttons.css">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@slike/booking_com_icon_logo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button layoutX="35.0" layoutY="480.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="117.0" styleClass="bLSU" stylesheets="@buttons.css" text="Reservations" textFill="WHITE" />
+            <Button fx:id="bHOME1" layoutX="35.0" layoutY="420.0" mnemonicParsing="false" onAction="#HOME1ButtonClick" onMouseClicked="#HOME1ButtonClick" prefHeight="26.0" prefWidth="117.0" styleClass="bLSU" stylesheets="@buttons.css" text="Search" textFill="WHITE" />
+            <Button layoutX="35.0" layoutY="540.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="117.0" styleClass="bLSU" stylesheets="@buttons.css" text="Logout" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="containerMainItems" layoutX="200.0" layoutY="200.0" prefHeight="686.0" prefWidth="1087.0">
+         <children>
+            <Pane layoutX="-6.0" layoutY="-7.0" prefHeight="725.0" prefWidth="1000.0">
+               <children>
+                  <ImageView fitHeight="730.0" fitWidth="1087.0" layoutX="4.0" layoutY="6.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@slike/9WYxT.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="131.0" layoutY="38.0" text="FIND ACCOMODATION FOR YOUR NEXT TRIP" textFill="#fffdfd">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="350.0" layoutY="120.0" prefHeight="40.0" prefWidth="286.0" promptText="Where are you going?" styleClass="TextF" stylesheets="@tfield.css" />
+                  <TextField layoutX="350.0" layoutY="330.0" prefHeight="40.0" prefWidth="286.0" promptText="Number of people" styleClass="TextF" stylesheets="@tfield.css" />
+                  <DatePicker layoutX="350.0" layoutY="190.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="286.0" promptText="Check-in" styleClass="TextF" stylesheets="@tfield.css">
+                     <padding>
+                        <Insets left="12.0" />
+                     </padding>
+                  </DatePicker>
+                  <DatePicker layoutX="350.0" layoutY="260.0" prefHeight="40.0" prefWidth="286.0" promptText="Check-out" styleClass="TextF" stylesheets="@tfield.css">
+                     <padding>
+                        <Insets left="12.0" />
+                     </padding>
+                  </DatePicker>
+                  <RadioButton contentDisplay="CENTER" layoutX="65.0" layoutY="570.0" mnemonicParsing="false" prefWidth="80.0" stylesheets="@tfield.css" text="WiFi" textFill="#f5efef">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="155.0" layoutY="570.0" mnemonicParsing="false" text="TV" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="230.0" layoutY="570.0" mnemonicParsing="false" text="AirConditioner" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="910.0" layoutY="570.0" mnemonicParsing="false" text="Pool" textFill="#fffefe">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="530.0" layoutY="570.0" mnemonicParsing="false" text="Bathroom" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="410.0" layoutY="570.0" mnemonicParsing="false" text="Balcony" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="670.0" layoutY="570.0" mnemonicParsing="false" text="Kitchen" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton layoutX="790.0" layoutY="570.0" mnemonicParsing="false" text="Parking" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <TextField layoutX="350.0" layoutY="470.0" prefHeight="40.0" prefWidth="286.0" promptText="Max. Price" styleClass="TextF" stylesheets="@tfield.css" />
+                  <TextField layoutX="350.0" layoutY="400.0" prefHeight="40.0" prefWidth="286.0" promptText="Min. Price" styleClass="TextF" stylesheets="@tfield.css" />
+                  <ImageView fitHeight="40.0" fitWidth="47.0" layoutX="655.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../slike/money.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="55.0" layoutX="655.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../slike/p.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="50.0" layoutX="655.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../slike/cale.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="50.0" layoutX="655.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../slike/cale.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="47.0" layoutX="655.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../slike/place.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="47.0" layoutX="655.0" layoutY="470.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../slike/money.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Button layoutX="340.0" layoutY="617.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="286.0" styleClass="bLSU" stylesheets="@buttons.css" text="SEARCH" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="containerMainItemsSIGNUPHOME" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="919.0" prefWidth="1287.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SignupController">
+   <children>
+      <Pane fx:id="Label" layoutX="200.0" prefHeight="200.0" prefWidth="1087.0" stylesheets="@pane.css">
+         <children>
+            <Label layoutX="304.0" layoutY="70.0" prefHeight="90.0" prefWidth="513.0" text="OOKING SYSTEM" textAlignment="RIGHT" textFill="#499fdd">
+               <font>
+                  <Font size="50.0" />
+               </font>
+               <graphic>
+                  <Label fx:id="letterB" prefHeight="90.0" prefWidth="0.0" stylesheets="@pane.css" text="B">
+                     <font>
+                        <Font size="74.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </Label>
+         </children>
+      </Pane>
+      <AnchorPane prefHeight="891.0" prefWidth="198.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="930.0" fitWidth="200.0" layoutY="-6.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1077.0" AnchorPane.topAnchor="-6.0">
+               <image>
+                  <Image url="@slike/backgroundMirrored.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="bHOME" layoutX="14.0" layoutY="121.0" mnemonicParsing="false" onAction="#HOME1ButtonClick" onMouseClicked="#HOME1ButtonClick" prefHeight="148.0" prefWidth="136.0" stylesheets="@buttons.css">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@slike/booking_com_icon_logo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="bLIN1" layoutX="35.0" layoutY="520.0" mnemonicParsing="false" onAction="#LN1ButtonClick" onMouseClicked="#LN1ButtonClick" prefHeight="26.0" prefWidth="117.0" styleClass="bLSU" stylesheets="@buttons.css" text="Login" textFill="WHITE" />
+            <Button fx:id="bSU1" layoutX="35.0" layoutY="470.0" mnemonicParsing="false" onAction="#SU1ButtonClick" onMouseClicked="#SU1ButtonClick" prefHeight="26.0" prefWidth="117.0" styleClass="bLSU" stylesheets="@buttons.css" text="Sign up" textFill="WHITE" />
+            <Button fx:id="bHOME1" layoutX="35.0" layoutY="420.0" mnemonicParsing="false" onAction="#HOME1ButtonClick" onMouseClicked="#HOME1ButtonClick" prefHeight="26.0" prefWidth="117.0" styleClass="bLSU" stylesheets="@buttons.css" text="Search" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="containerMainItems" layoutX="200.0" layoutY="200.0" prefHeight="686.0" prefWidth="1087.0">
+         <children>
+            <Pane layoutX="-6.0" layoutY="-7.0" prefHeight="725.0" prefWidth="1000.0">
+               <children>
+                  <ImageView fitHeight="730.0" fitWidth="1087.0" layoutX="4.0" layoutY="6.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@slike/9WYxT.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="pane5" layoutX="270.0" layoutY="55.0" opacity="0.96" prefHeight="613.0" prefWidth="540.0" stylesheets="@pane.css">
+               <children>
+                  <TextField fx:id="NameSU" layoutX="130.0" layoutY="120.0" prefHeight="26.0" prefWidth="286.0" promptText="Name" styleClass="TextF" stylesheets="@tfield.css" />
+                  <TextField fx:id="LNameSU" layoutX="130.0" layoutY="160.0" prefHeight="26.0" prefWidth="286.0" promptText="Last name" styleClass="TextF" stylesheets="@tfield.css" />
+                  <Button fx:id="bSU2" layoutX="207.0" layoutY="553.0" mnemonicParsing="false" onAction="#bSU2Click" prefHeight="32.0" prefWidth="140.0" styleClass="bLSU" stylesheets="@buttons.css" text="Sign up" textFill="WHITE" />
+                  <TextField fx:id="PNumberSU" layoutX="130.0" layoutY="200.0" prefHeight="26.0" prefWidth="286.0" promptText="Phone number" styleClass="TextF" stylesheets="@tfield.css" />
+                  <TextField fx:id="AOLSU" layoutX="130.0" layoutY="240.0" prefHeight="26.0" prefWidth="286.0" promptText="Adress of living" styleClass="TextF" stylesheets="@tfield.css" />
+                  <TextField fx:id="DOBSU" layoutX="130.0" layoutY="280.0" prefHeight="26.0" prefWidth="286.0" promptText="Date of birth" styleClass="TextF" stylesheets="@tfield.css" />
+                  <TextField fx:id="EmailSU" layoutX="130.0" layoutY="320.0" prefHeight="26.0" prefWidth="286.0" promptText="Email" styleClass="TextF" stylesheets="@tfield.css" />
+                  <TextField fx:id="UNameSU" layoutX="130.0" layoutY="360.0" prefHeight="26.0" prefWidth="286.0" promptText="User name" styleClass="TextF" stylesheets="@tfield.css" />
+                  <TextField fx:id="PasswordSU" layoutX="130.0" layoutY="400.0" prefHeight="26.0" prefWidth="286.0" promptText="Password" styleClass="TextF" stylesheets="@tfield.css" />
+                  <Label layoutX="140.0" layoutY="40.0" text="JOIN US TODAY" textFill="#fffdfd">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="BalanceSU" layoutX="130.0" layoutY="440.0" prefHeight="26.0" prefWidth="286.0" promptText="Balance" styleClass="TextF" stylesheets="@tfield.css" />
+                  <Label fx:id="taken" layoutX="116.0" layoutY="515.0" prefHeight="26.0" prefWidth="322.0" text="Oops, username is already taken!" textFill="#f89090" visible="false">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <MenuButton layoutX="130.0" layoutY="480.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="286.0" styleClass="bLSU" stylesheets="@buttons.css" text="Type of user" textFill="WHITE">
+                     <items>
+                        <CheckMenuItem fx:id="user" mnemonicParsing="false" onAction="#userClick" text="User" />
+                        <CheckMenuItem fx:id="landlord" mnemonicParsing="false" onAction="#userClick" text="Landlord" />
+                     </items>
+                  </MenuButton>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

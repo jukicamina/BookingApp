@@ -1,0 +1,64 @@
+/* 
+ * 
+ *       CREATED BY SARA 01.08.2021 
+ * 
+ * 
+ */
+ 
+ 
+
+.bImage{
+	-fx-background-color : transparent ;
+-fx-background-radius :  30 0 0 30;
+	
+}
+
+
+.bImage:hover{
+	
+	/* -fx-background-color : #499fdd; */
+	-fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+     -fx-scale-z: 1.1;
+	-fx-opacity:0.5;
+}
+
+.bLSU
+{
+	-fx-text-fill:#255255255;
+-fx-background-color : #499fdd;
+-fx-background-radius :  30 0 0 30;
+}
+.bLSU:hover
+{
+-fx-background-color : #524A7B ;
+-fx-background-radius :  30 0 0 30;
+}
+#bSU:pressed{
+	
+}
+
+#bHOME{
+	
+	-fx-background-color:transparent;
+	/* -fx-background-radius:30 0 0 30; */
+}
+#bHOME:hover{
+
+	-fx-background-color:white;
+	
+}
+
+.bNP{
+	
+	 -fx-background-color: #499fdd;
+  -fx-text-fill: white;
+  
+  
+}
+
+.bNP:hover{
+	-fx-opacity:0.5;
+	
+}
+

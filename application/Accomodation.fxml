@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="containerMainItemsAccomodation" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AccomodationController">
+   <children>
+      <AnchorPane prefHeight="686.0" prefWidth="1087.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fitHeight="720.0" fitWidth="1087.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@slike/9WYxT.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="img" fitHeight="274.0" fitWidth="361.0" layoutX="85.0" layoutY="190.0" pickOnBounds="true" />
+            <Label fx:id="name" layoutX="84.0" layoutY="70.0" prefHeight="67.0" prefWidth="361.0" stylesheets="@buttons.css" text=" Accomodation name" textFill="WHITE">
+               <font>
+                  <Font name="Purisa Bold" size="24.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="bNP" />
+                  <String fx:value="bLSU" />
+               </styleClass>
+            </Label>
+            <Label fx:id="description" alignment="TOP_LEFT" contentDisplay="CENTER" layoutX="104.0" layoutY="490.0" prefHeight="76.0" prefWidth="750.0" textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Purisa Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="city" layoutX="109.0" layoutY="144.0" prefHeight="29.0" prefWidth="336.0" text="Location" textFill="WHITE">
+               <font>
+                  <Font name="Purisa Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="price" layoutX="617.0" layoutY="235.0" prefHeight="40.0" prefWidth="95.0" textFill="WHITE">
+               <font>
+                  <Font name="Purisa Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="500.0" layoutY="235.0" prefHeight="36.0" prefWidth="95.0" styleClass="bLSU" stylesheets="@buttons.css" text="Price" textFill="WHITE">
+               <font>
+                  <Font name="Purisa Bold" size="18.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="wifi_rb" contentDisplay="CENTER" disable="true" layoutX="900.0" layoutY="150.0" mnemonicParsing="false" prefWidth="80.0" stylesheets="@tfield.css" text="WiFi" textFill="#f5efef">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="tv_rb" disable="true" layoutX="900.0" layoutY="200.0" mnemonicParsing="false" text="TV" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="ac_rb" disable="true" layoutX="900.0" layoutY="250.0" mnemonicParsing="false" text="AirConditioner" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="balcony_rb" disable="true" layoutX="900.0" layoutY="300.0" mnemonicParsing="false" text="Balcony" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="bath_rb" disable="true" layoutX="900.0" layoutY="350.0" mnemonicParsing="false" text="Bathroom" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="kitchen_rb" disable="true" layoutX="900.0" layoutY="400.0" mnemonicParsing="false" text="Kitchen" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="parking_rb" disable="true" layoutX="900.0" layoutY="450.0" mnemonicParsing="false" text="Parking" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="pool_rb" disable="true" layoutX="900.0" layoutY="500.0" mnemonicParsing="false" text="Pool" textFill="#fffefe">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </RadioButton>
+            <Label alignment="CENTER" layoutX="500.0" layoutY="310.0" prefHeight="36.0" prefWidth="290.0" styleClass="bLSU" stylesheets="@buttons.css" text="Online payment in advance" textFill="WHITE">
+               <font>
+                  <Font name="Purisa Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="in_advance" layoutX="797.0" layoutY="310.0" prefHeight="40.0" prefWidth="50.0" textFill="WHITE">
+               <font>
+                  <Font name="Purisa Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="500.0" layoutY="385.0" prefHeight="36.0" prefWidth="175.0" styleClass="bLSU" stylesheets="@buttons.css" text="Cancellation fee" textFill="WHITE">
+               <font>
+                  <Font name="Purisa Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="fee" layoutX="705.0" layoutY="385.0" prefHeight="40.0" prefWidth="95.0" textFill="WHITE">
+               <font>
+                  <Font name="Purisa Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="book_now" layoutX="90.0" layoutY="610.0" mnemonicParsing="false" onAction="#bookIsClicked" prefHeight="48.0" prefWidth="361.0" styleClass="bLSU" stylesheets="@buttons.css" text="BOOK NOW" textFill="WHITE">
+               <font>
+                  <Font name="Purisa Bold" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="back" layoutX="490.0" layoutY="610.0" mnemonicParsing="false" onMouseClicked="#backClicked" prefHeight="48.0" prefWidth="361.0" styleClass="bLSU" stylesheets="@buttons.css" text="GO BACK" textFill="WHITE">
+               <font>
+                  <Font name="Purisa Bold" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

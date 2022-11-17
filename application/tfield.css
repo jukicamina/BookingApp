@@ -1,0 +1,22 @@
+/*
+ * 
+ *                         CREATED BY SARA 
+ *                          05.08.2021
+ *                             21:36
+ * 
+ */
+ 
+ 
+ .TextF{
+ 	-fx-background-radius :  30 0 0 30;
+ 	-fx-background-color:white;
+
+ 	
+ }
+ .TextF:hover{
+ 	-fx-scale-x: 1.2;
+    -fx-scale-y: 1.2;
+     -fx-scale-z: 1.2;
+     -fx-background-color:#b3b1b1;
+     -fx-text-fill:black;
+ }

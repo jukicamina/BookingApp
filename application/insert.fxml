@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckMenuItem?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1087.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InsertAccController">
+   <children>
+      <AnchorPane layoutX="47.0" layoutY="38.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="682.0" prefWidth="990.0" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="49.0" AnchorPane.rightAnchor="48.0" AnchorPane.topAnchor="40.0">
+         <children>
+            <ImageView fitHeight="730.0" fitWidth="1087.0" layoutX="-50.0" layoutY="-44.0" pickOnBounds="true" AnchorPane.bottomAnchor="-44.0" AnchorPane.leftAnchor="-50.0" AnchorPane.rightAnchor="-50.0" AnchorPane.topAnchor="-44.0">
+               <image>
+                  <Image url="@slike/9WYxT.png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="-6.0" layoutY="-31.0" prefHeight="694.0" prefWidth="1000.0">
+               <children>
+                  <ImageView fitHeight="40.0" fitWidth="47.0" layoutX="773.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../slike/money.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="insertAcc" alignment="CENTER" layoutX="250.0" layoutY="80.0" prefHeight="35.0" prefWidth="500.0" promptText="Accomodation name" styleClass="TextF" stylesheets="@tfield.css" />
+                  <TextField fx:id="insertCapacity" alignment="CENTER" layoutX="250.0" layoutY="180.0" prefHeight="35.0" prefWidth="500.0" promptText="Capacity" styleClass="TextF" stylesheets="@tfield.css" />
+                  <RadioButton fx:id="insertWIFI" contentDisplay="CENTER" layoutX="25.0" layoutY="543.0" mnemonicParsing="false" prefWidth="80.0" stylesheets="@tfield.css" text="WiFi" textFill="#f5efef">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="insertTV" layoutX="130.0" layoutY="543.0" mnemonicParsing="false" text="TV" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="insertAC" layoutX="206.0" layoutY="543.0" mnemonicParsing="false" text="AirConditioner" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="insertPool" layoutX="894.0" layoutY="543.0" mnemonicParsing="false" text="Pool" textFill="#fffefe">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="insertBathroom" layoutX="514.0" layoutY="543.0" mnemonicParsing="false" text="Bathroom" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="insertBalcony" layoutX="396.0" layoutY="543.0" mnemonicParsing="false" text="Balcony" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="insertKitchen" layoutX="650.0" layoutY="543.0" mnemonicParsing="false" text="Kitchen" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="insertParking" layoutX="767.0" layoutY="543.0" mnemonicParsing="false" text="Parking" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RadioButton>
+                  <TextField fx:id="insertDB" alignment="CENTER" layoutX="249.0" layoutY="483.0" prefHeight="50.0" prefWidth="500.0" promptText="Description Box" styleClass="TextF" stylesheets="@tfield.css" />
+                  <TextField fx:id="insertPrice" alignment="CENTER" layoutX="250.0" layoutY="230.0" prefHeight="35.0" prefWidth="500.0" promptText="Price" styleClass="TextF" stylesheets="@tfield.css" />
+                  <Button fx:id="InsertButton" layoutX="375.0" layoutY="587.0" mnemonicParsing="false" onAction="#InsertButtonClicked" prefHeight="33.0" prefWidth="250.0" styleClass="bLSU" stylesheets="@buttons.css" text="INSERT" textFill="WHITE" />
+                  <ImageView fitHeight="40.0" fitWidth="55.0" layoutX="770.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../slike/p.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="47.0" layoutX="774.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../slike/place.png" />
+                     </image>
+                  </ImageView>
+                  <TextField fx:id="InsertLoc" alignment="CENTER" layoutX="250.0" layoutY="130.0" onAction="#LocClick" prefHeight="35.0" prefWidth="500.0" promptText="Location" styleClass="TextF" stylesheets="@tfield.css" />
+                  <Text fill="#ebe8e8" layoutX="50.0" layoutY="480.0" strokeType="OUTSIDE" strokeWidth="0.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="insertCF" alignment="CENTER" layoutX="250.0" layoutY="380.0" prefHeight="35.0" prefWidth="500.0" promptText="Cancellation fee" styleClass="TextF" stylesheets="@tfield.css" />
+                  <ImageView fitHeight="40.0" fitWidth="47.0" layoutX="773.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../slike/money.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="47.0" layoutX="770.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../slike/ID.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" fitWidth="50.0" layoutX="771.0" layoutY="483.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../slike/description.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="200.0" layoutX="776.0" layoutY="277.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../slike/photo.png" />
+                     </image>
+                  </ImageView>
+                  <MenuButton fx:id="insertOP" alignment="CENTER" contentDisplay="BOTTOM" layoutX="250.0" layoutY="330.0" mnemonicParsing="false" prefHeight="5.0" prefWidth="500.0" styleClass="bLSU" stylesheets="@buttons.css" text="Online payment in advance" textFill="#f1f0f2">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <items>
+                        <CheckMenuItem fx:id="OPIAY" mnemonicParsing="false" onAction="#OPIAclick" text="Yes" />
+                        <CheckMenuItem fx:id="OPIAN" mnemonicParsing="false" onAction="#OPIAclick" text="No" />
+                     </items>
+                  </MenuButton>
+                  <ImageView fitHeight="45.0" fitWidth="47.0" layoutX="767.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../slike/house.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="50.0" fitWidth="45.0" layoutX="779.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../slike/pay.jpg" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="LabeLa" disable="true" layoutX="261.0" layoutY="47.0" prefHeight="24.0" prefWidth="487.0" text="                            Type Of Accomodation" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <JFXComboBox fx:id="InsertComboBox" focusColor="#fcf7f7" layoutX="255.0" layoutY="46.0" onAction="#ComboClick" onMouseClicked="#ComboClick" prefHeight="26.0" prefWidth="493.0" unFocusColor="WHITE" />
+                  <TextField fx:id="insertSurface" alignment="CENTER" layoutX="255.0" layoutY="431.0" prefHeight="33.0" prefWidth="493.0" promptText="Surface" styleClass="TextF" stylesheets="@tfield.css" />
+                  <Label fx:id="emptyLabel" contentDisplay="CENTER" layoutX="255.0" layoutY="14.0" prefHeight="28.0" prefWidth="500.0" text="                                      Label" textFill="#f58585" visible="false">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="insertPicture" layoutX="251.0" layoutY="280.0" mnemonicParsing="false" onAction="#PictureClick" prefHeight="33.0" prefWidth="500.0" styleClass="bLSU" stylesheets="@buttons.css" text="Add image" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="-2.0" right="-2.0" top="-2.0" />
+   </padding>
+</AnchorPane>

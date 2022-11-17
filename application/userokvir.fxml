@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="containerMainItemsHOMEUSER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="919.0" prefWidth="1287.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.UserController">
+   <children>
+      <Pane fx:id="Label" layoutX="200.0" prefHeight="200.0" prefWidth="1087.0" stylesheets="@pane.css">
+         <children>
+            <Label layoutX="304.0" layoutY="70.0" prefHeight="90.0" prefWidth="513.0" text="OOKING SYSTEM" textAlignment="RIGHT" textFill="#499fdd">
+               <font>
+                  <Font size="50.0" />
+               </font>
+               <graphic>
+                  <Label fx:id="letterB" prefHeight="90.0" prefWidth="0.0" stylesheets="@pane.css" text="B">
+                     <font>
+                        <Font size="74.0" />
+                     </font>
+                  </Label>
+               </graphic>
+            </Label>
+         </children>
+      </Pane>
+      <AnchorPane prefHeight="891.0" prefWidth="198.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="930.0" fitWidth="200.0" layoutY="-6.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1077.0" AnchorPane.topAnchor="-6.0">
+               <image>
+                  <Image url="@slike/backgroundMirrored.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="bHOME" layoutX="14.0" layoutY="121.0" mnemonicParsing="false" prefHeight="148.0" prefWidth="136.0" stylesheets="@buttons.css">
+               <graphic>
+                  <ImageView fitHeight="150.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@slike/booking_com_icon_logo.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="ReservationsUS" layoutX="35.0" layoutY="470.0" mnemonicParsing="false" onAction="#ReservationsUSClick" prefHeight="26.0" prefWidth="117.0" styleClass="bLSU" stylesheets="@buttons.css" text="Reservations" textFill="WHITE" />
+            <Button fx:id="searchLabel" layoutX="35.0" layoutY="420.0" mnemonicParsing="false" onMouseClicked="#searchLabelClick" prefHeight="26.0" prefWidth="117.0" styleClass="bLSU" stylesheets="@buttons.css" text="Search" textAlignment="CENTER" textFill="WHITE" />
+            <Button fx:id="LOGOUTUSER" layoutX="36.0" layoutY="570.0" mnemonicParsing="false" onAction="#logoutUserClick" prefHeight="26.0" prefWidth="117.0" styleClass="bLSU" stylesheets="@buttons.css" text="Logout" textFill="WHITE" />
+            <Button fx:id="addFunds1" layoutX="35.0" layoutY="520.0" mnemonicParsing="false" onAction="#addFunds1Click" prefHeight="26.0" prefWidth="117.0" styleClass="bLSU" stylesheets="@buttons.css" text="Add funds" textAlignment="CENTER" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="containerMainItemsUSER" layoutX="200.0" layoutY="200.0" prefHeight="686.0" prefWidth="1087.0">
+         <children>
+            <ImageView fitHeight="720.0" fitWidth="1087.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@slike/9WYxT.png" />
+               </image>
+            </ImageView>
+            <Text fill="#499fdd" layoutX="250.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome, " textAlignment="CENTER">
+               <font>
+                  <Font name="Purisa Bold" size="48.0" />
+               </font>
+            </Text>
+            <Text fill="#499fdd" layoutX="160.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The greatest journey begins here!" textAlignment="CENTER">
+               <font>
+                  <Font name="Purisa Bold" size="34.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="115.0" fitWidth="250.0" layoutX="509.0" layoutY="124.0" pickOnBounds="true">
+               <image>
+                  <Image url="@slike/book-now.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="876.0" layoutY="206.0" pickOnBounds="true">
+               <image>
+                  <Image url="@slike/plane.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="321.0" fitWidth="926.0" layoutX="64.0" layoutY="366.0" pickOnBounds="true">
+               <image>
+                  <Image url="@slike/route.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

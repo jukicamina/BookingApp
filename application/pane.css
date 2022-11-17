@@ -1,0 +1,48 @@
+/*       
+ * 
+ *             CREATED BY SARA  03.08.2021
+ *                                14:02
+ * 
+ */
+ 
+ #pane{
+ 	
+ 	-fx-background-color:white;
+ 	-fx-background-radius:70%;
+ }
+ 
+ #Label{
+ 	
+ 	-fx-font-size: 50pt;
+    -fx-font-family: "Segoe UI Semibold";
+    -fx-text-fill: #499fdd;
+    -fx-opacity: 0.6;
+    -fx-background-color: #3f6491;
+ }
+ #pane2{
+ 	-fx-font-size: 70pt;
+ 	
+ }
+ 
+ #SPane{
+ 	
+ 	-fx-background-color: #499fdd;
+ 	
+ 	}
+ 	
+#letterB{
+	-fx-text-fill:#273b79;
+}
+
+#pane5{
+	-fx-background-color:transparent;
+	
+ 	-fx-background-radius:70%;
+ 	-fx-border-color:black;
+	
+}
+#pane5:hover{
+	
+}
+
+
